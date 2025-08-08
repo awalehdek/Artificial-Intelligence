@@ -1,0 +1,168 @@
+awalehdek@awalehdek:~/Desktop/Summer 2023/submitted/assign1$ python3 ./cs3793_5233_assignment1_llx812.py cities.csv distances.csv 
+San Angelo: [('Midland', 112.2834231), ('Lubbock', 185.1135794), ('Abilene', 95.26906977), ('San Antonio', 210.8494821)]
+Midland: [('San Angelo', 112.2834231), ('Lubbock', 117.0903414), ('Odessa', 24.06690284)]
+Lubbock: [('San Angelo', 185.1135794), ('Midland', 117.0903414), ('Amarillo', 122.9827931)]
+Abilene: [('San Angelo', 95.26906977)]
+San Antonio: [('San Angelo', 210.8494821), ('New Braunfels', 30.80876734), ('Seguin', 33.99204585), ('Three Rivers', 74.50909807), ('Uvalde', 82.70993933)]
+New Braunfels: [('San Antonio', 30.80876734), ('San Marcos', 18.48948572), ('Seguin', 15.28073104)]
+Seguin: [('San Antonio', 33.99204585), ('Gonzalez', 33.4234923), ('New Braunfels', 15.28073104), ('Columbus', 89.60403948)]
+Three Rivers: [('San Antonio', 74.50909807), ('Corpus Christi', 81.17701954), ('Alice', 51.26861733), ('Kenedy', 33.25447966)]
+Uvalde: [('San Antonio', 82.70993933), ('Del Rio', 70.27570426)]
+Austin: [('San Marcos', 30.71742595), ('Round Rock', 18.46400955), ('College Station', 106.7588224), ('Houston', 165.9076541)]
+San Marcos: [('Austin', 30.71742595), ('New Braunfels', 18.48948572), ('Gonzalez', 42.19972218)]
+Round Rock: [('Austin', 18.46400955), ('Temple', 49.72389151)]
+College Station: [('Austin', 106.7588224), ('Waco', 97.82787143), ('Houston', 99.20917694)]
+Houston: [('Austin', 165.9076541), ('College Station', 99.20917694), ('Beaumont', 99.57951346), ('Galveston', 65.02139954), ('Columbus', 72.51512174), ('Sugar Land', 59.1357829)]
+Temple: [('Waco', 35.94252628), ('Round Rock', 49.72389151)]
+Waco: [('Temple', 35.94252628), ('College Station', 97.82787143), ('Palestine', 117.156828), ('Fort Worth', 106.0914711), ('Dallas', 98.6300601)]
+Beaumont: [('Houston', 99.57951346)]
+Galveston: [('Houston', 65.02139954), ('Jamaica Beach', 15.73246703)]
+Columbus: [('Houston', 72.51512174), ('Seguin', 89.60403948)]
+Sugar Land: [('Houston', 59.1357829)]
+Victoria: [('Gonzalez', 60.3723092), ('Corpus Christi', 89.12185636)]
+Gonzalez: [('Victoria', 60.3723092), ('Seguin', 33.4234923), ('San Marcos', 42.19972218)]
+Corpus Christi: [('Victoria', 89.12185636), ('Three Rivers', 81.17701954)]
+Alice: [('Laredo', 98.54431104), ('Three Rivers', 51.26861733), ('McAllen', 113.6156404)]
+Laredo: [('Alice', 98.54431104), ('McAllen', 144.3001337)]
+McAllen: [('Alice', 113.6156404), ('Laredo', 144.3001337), ('Brownsville', 59.20599771)]
+Del Rio: [('Uvalde', 70.27570426)]
+El Paso: [('Odessa', 325.8408357)]
+Odessa: [('El Paso', 325.8408357), ('Midland', 24.06690284)]
+Brownsville: [('McAllen', 59.20599771)]
+Palestine: [('Waco', 117.156828)]
+Fort Worth: [('Waco', 106.0914711), ('Dallas', 39.03943436), ('Wichita Falls', 116.7311896)]
+Dallas: [('Waco', 98.6300601), ('Fort Worth', 39.03943436), ('Texarkana', 178.7551002)]
+Amarillo: [('Lubbock', 122.9827931), ('Dalhart', 85.07238807)]
+Dalhart: [('Amarillo', 85.07238807)]
+Wichita Falls: [('Fort Worth', 116.7311896)]
+Jamaica Beach: [('Galveston', 15.73246703)]
+Texarkana: [('Dallas', 178.7551002)]
+Kenedy: [('Three Rivers', 33.25447966)]
+
+
+
+Infecting Three Rivers | Path: Three Rivers 
+| Distance: 0 miles 
+
+Infecting San Antonio | Path: Three Rivers -> San Antonio 
+| Distance: 74.50909807 miles 
+
+Infecting Corpus Christi | Path: Three Rivers -> Corpus Christi 
+| Distance: 81.17701954 miles 
+
+Infecting Alice | Path: Three Rivers -> Alice 
+| Distance: 51.26861733 miles 
+
+Infecting Kenedy | Path: Three Rivers -> Kenedy 
+| Distance: 33.25447966 miles 
+
+Infecting San Angelo | Path: Three Rivers -> San Antonio -> San Angelo 
+| Distance: 285.35858017 miles 
+
+Infecting New Braunfels | Path: Three Rivers -> San Antonio -> New Braunfels 
+| Distance: 105.31786541 miles 
+
+Infecting Seguin | Path: Three Rivers -> San Antonio -> Seguin 
+| Distance: 108.50114391999999 miles 
+
+Infecting Uvalde | Path: Three Rivers -> San Antonio -> Uvalde 
+| Distance: 157.2190374 miles 
+
+Infecting Victoria | Path: Three Rivers -> Corpus Christi -> Victoria 
+| Distance: 170.29887589999998 miles 
+
+Infecting Laredo | Path: Three Rivers -> Alice -> Laredo 
+| Distance: 149.81292837 miles 
+
+Infecting McAllen | Path: Three Rivers -> Alice -> McAllen 
+| Distance: 164.88425773 miles 
+
+Infecting Midland | Path: Three Rivers -> San Antonio -> San Angelo -> Midland 
+| Distance: 397.64200327 miles 
+
+Infecting Lubbock | Path: Three Rivers -> San Antonio -> San Angelo -> Lubbock 
+| Distance: 470.47215957 miles 
+
+Infecting Abilene | Path: Three Rivers -> San Antonio -> San Angelo -> Abilene 
+| Distance: 380.62764993999997 miles 
+
+Infecting San Marcos | Path: Three Rivers -> San Antonio -> New Braunfels -> San Marcos 
+| Distance: 123.80735113 miles 
+
+Infecting Gonzalez | Path: Three Rivers -> San Antonio -> Seguin -> Gonzalez 
+| Distance: 141.92463622 miles 
+
+Infecting Columbus | Path: Three Rivers -> San Antonio -> Seguin -> Columbus 
+| Distance: 198.1051834 miles 
+
+Infecting Del Rio | Path: Three Rivers -> San Antonio -> Uvalde -> Del Rio 
+| Distance: 227.49474166 miles 
+
+Infecting Brownsville | Path: Three Rivers -> Alice -> McAllen -> Brownsville 
+| Distance: 224.09025544 miles 
+
+Infecting Odessa | Path: Three Rivers -> San Antonio -> San Angelo -> Midland -> Odessa 
+| Distance: 421.70890611 miles 
+
+Infecting Amarillo | Path: Three Rivers -> San Antonio -> San Angelo -> Lubbock -> Amarillo 
+| Distance: 593.45495267 miles 
+
+Infecting Austin | Path: Three Rivers -> San Antonio -> New Braunfels -> San Marcos -> Austin 
+| Distance: 154.52477708 miles 
+
+Infecting Houston | Path: Three Rivers -> San Antonio -> Seguin -> Columbus -> Houston 
+| Distance: 270.62030513999997 miles 
+
+Infecting El Paso | Path: Three Rivers -> San Antonio -> San Angelo -> Midland -> Odessa -> El Paso 
+| Distance: 747.54974181 miles 
+
+Infecting Dalhart | Path: Three Rivers -> San Antonio -> San Angelo -> Lubbock -> Amarillo -> Dalhart 
+| Distance: 678.52734074 miles 
+
+Infecting Round Rock | Path: Three Rivers -> San Antonio -> New Braunfels -> San Marcos -> Austin -> Round Rock 
+| Distance: 172.98878663 miles 
+
+Infecting College Station | Path: Three Rivers -> San Antonio -> New Braunfels -> San Marcos -> Austin -> College Station 
+| Distance: 261.28359948 miles 
+
+Infecting Beaumont | Path: Three Rivers -> San Antonio -> Seguin -> Columbus -> Houston -> Beaumont 
+| Distance: 370.19981859999996 miles 
+
+Infecting Galveston | Path: Three Rivers -> San Antonio -> Seguin -> Columbus -> Houston -> Galveston 
+| Distance: 335.64170468 miles 
+
+Infecting Sugar Land | Path: Three Rivers -> San Antonio -> Seguin -> Columbus -> Houston -> Sugar Land 
+| Distance: 329.75608803999995 miles 
+
+Infecting Temple | Path: Three Rivers -> San Antonio -> New Braunfels -> San Marcos -> Austin -> Round Rock -> Temple 
+| Distance: 222.71267813999998 miles 
+
+Infecting Waco | Path: Three Rivers -> San Antonio -> New Braunfels -> San Marcos -> Austin -> College Station -> Waco 
+| Distance: 359.11147091000004 miles 
+
+Infecting Jamaica Beach | Path: Three Rivers -> San Antonio -> Seguin -> Columbus -> Houston -> Galveston -> Jamaica Beach 
+| Distance: 351.37417171 miles 
+
+Infecting Palestine | Path: Three Rivers -> San Antonio -> New Braunfels -> San Marcos -> Austin -> College Station -> Waco -> Palestine 
+| Distance: 476.26829891000006 miles 
+
+Infecting Fort Worth | Path: Three Rivers -> San Antonio -> New Braunfels -> San Marcos -> Austin -> College Station -> Waco -> Fort Worth 
+| Distance: 465.20294201 miles 
+
+Infecting Dallas | Path: Three Rivers -> San Antonio -> New Braunfels -> San Marcos -> Austin -> College Station -> Waco -> Dallas 
+| Distance: 457.74153101 miles 
+
+Infecting Wichita Falls | Path: Three Rivers -> San Antonio -> New Braunfels -> San Marcos -> Austin -> College Station -> Waco -> Fort Worth -> Wichita Falls 
+| Distance: 581.93413161 miles 
+
+Infecting Texarkana | Path: Three Rivers -> San Antonio -> New Braunfels -> San Marcos -> Austin -> College Station -> Waco -> Dallas -> Texarkana 
+| Distance: 636.49663121 miles 
+
+
+The path / sequence of cities that will be visited in the optimal vaccine transportation strategy:
+['San Antonio', 'New Braunfels', 'San Marcos', 'Austin', 'College Station']
+
+The total distance travelled in the optimal vaccine transportation strategy: 
+Total distance: 186.77450141 Kilometers |  116.0562587156331 Miles
+awalehdek@awalehdek:~/Desktop/Summer 2023/submitted/assign1$ 
+
